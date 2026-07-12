@@ -1,40 +1,60 @@
-# ProHabit: Advanced Productivity Manager
+# Expense Tracker
 
-ProHabit is a cutting-edge Task & Habit manager built with modern web technologies. It is designed to be lightning-fast, offline-capable, and completely serverless.
+A full-stack **Expense Tracker** web application built using the **MERN stack** (MongoDB, Express, React, Node.js). It helps you **track income, expenses, and get visual financial insights**.
 
-## 🚀 Advanced Technologies Used
+---
 
-- **Next.js 16 (App Router)**: The core framework providing automatic code splitting, lazy loading, and edge serverless APIs.
-- **TypeScript**: End-to-end type safety for rock-solid reliability.
-- **Progressive Web App (PWA)**: Implements offline caching, installability, and push notification access via `next-pwa`.
-- **GraphQL & Apollo**: Replaces legacy REST architectures with an efficient GraphQL endpoint hosted entirely in a Serverless Next.js API Route.
-- **MongoDB & Mongoose**: Advanced document-based database for scalable task storage.
-- **Tailwind CSS**: A beautiful, micro-animation rich, and responsive glassmorphic UI.
-- **Vitest & React Testing Library**: For comprehensive unit and UI testing.
+## ✨ Features & Functionalities
 
-## 🛠️ Setup & Deployment
+1. **User Authentication** – Secure login and sign-up using JWT.
+2. **Dashboard Overview** – Displays Total Balance, Income, and Expenses in summary cards.
+3. **Income Management** – Add, view, delete, and export income sources.
+4. **Expense Management** – Add, view, delete, and export categorized expenses.
+5. **Interactive Charts** – Visualize income & expense trends (Bar, Pie, Line).
+6. **Recent Transactions** – View the latest income and expense records quickly.
+7. **Export Reports** – Download income and expense data in Excel format.
+8. **Mobile Responsive UI** – Smooth experience across devices.
+9. **Sidebar Navigation** – Easy access to Dashboard, Income, Expenses, and Logout.
+10. **Quick Delete** – Hover-to-delete feature for income/expense cards.
 
-### Local Setup
-1. Define `MONGODB_URI` in `.env.local` to point to a MongoDB instance.
-2. Run `npm install`
-3. Run `npm run dev` to start the local server.
+---
 
-### Advanced Deployment & Monitoring
-This application is perfectly tuned for **Vercel**:
-1. Push this repository to GitHub.
-2. Import it in Vercel.
-3. Vercel automatically detects the Next.js framework, sets up Edge Caching for the PWA assets, and provides advanced Analytics & Speed Insights natively.
-4. **Error Handling**: Native `error.tsx` boundaries capture all client-side crashes, ready to be piped into tools like Sentry.
+## 📊 Screenshots
 
-## 🧪 Testing Strategy
-Run tests using Vitest:
-```bash
-npm run test
-```
+### Login
+![Login](./screens/Login.jpg)
 
-## 📈 Performance Optimizations
-- **Image Optimization**: Custom logos are served via `next/image` ensuring optimal formats (WebP/AVIF).
-- **Dynamic Imports**: Large components like `TaskList` are loaded asynchronously, dropping initial page load times.
-- **Real-Time Polling**: Simulates WebSocket live sync without maintaining expensive persistent server connections.
+### Dashboard Overview
+![Dashboard](./screens/DashBoard.jpg)
 
-Enjoy unparalleled productivity with ProHabit!
+### Add Expense
+![Add Expense](./screens/Add_Expense.jpg)
+
+### Add Income
+![Add Income](./screens/Add_Income.jpg)
+
+### Income Page
+![Income](./screens/Income.jpg)
+
+### Expense Page
+![Expense](./screens/Expense.jpg)
+
+## 🌐 Tech Stack
+
+* **Frontend:** React, Vite, TailwindCSS
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB Atlas
+* **Authentication:** JWT (JSON Web Token)
+
+---
+
+## ☑️ Future Improvements
+
+* Dark mode toggle
+* Budget setting per category
+* PDF export reports
+* Email monthly summary
+
+---
+
+
